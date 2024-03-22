@@ -4,29 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flowerhead Farm</title>
-    <link rel="stylesheet" href="https://use.typekit.net/abcdefg.css"> <!-- Example link, replace with your actual link -->
+    <link rel="stylesheet" href="https://use.typekit.net/yrt0udn.css"> <!-- Link to Typekit stylesheet -->
     <style>
         body {
-            font-family: "operina-pro", sans-serif;
+            font-family: "p22-operina-pro", sans-serif; /* Using the specified font family */
+            font-weight: 400; /* Font weight 400 (normal) */
+            font-style: normal; /* Normal font style */
             margin: 0;
             padding: 0;
             background-color: #F7B20E; /* Background color set to F7B20E */
         }
 
         header {
-            background-color: #333;
+            background-color: #F7B20E;
             color: #fff;
             padding: 20px;
             text-align: center;
+            animation: bounce 2s infinite alternate, spin 4s linear infinite; /* Apply bouncing and spinning animations */
         }
 
-        /* Other CSS styles */
+        h1 {
+            font-size: 116px; /* Adjust font size as needed */
+        }
+
+        /* Define bouncing animation */
+        @keyframes bounce {
+            from {
+                transform: translateX(-20px);
+            }
+            to {
+                transform: translateX(20px);
+            }
+        }
+
+        /* Define spinning animation */
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Specify font family only */
+        h1, h2, h3, h4, h5, h6, p {
+            font-family: "p22-operina-pro", sans-serif; /* Using the specified font family */
+            font-weight: 400; /* Font weight 400 (normal) */
+            font-style: normal; /* Normal font style */
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Flowerhead Farm</h1>
     </header>
-    <!-- Your HTML content -->
+    <p>Bouquets</p><!-- Your HTML content -->
 </body>
 </html>
