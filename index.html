@@ -15,6 +15,9 @@
             padding: 0;
             background-color: #F7B20E; /* Background color set to F7B20E */
         }
+        .centered {
+        text-align: center;
+    }
 
         header {
             font-family: "p22-operina-pro", sans-serif; /* Using Operina Pro for headers */
@@ -87,23 +90,27 @@
         <p>Bouquets are available for delivery in Otsego and Delaware County or you can pick one up at our farmstand at 928 County Highway 35, Maryland NY 12116 (<a href = "https://www.google.com/maps/place/928+County+Hwy+35,+Maryland,+NY+12116/@42.532302,-74.949333,17z/data=!3m1!4b1!4m6!3m5!1s0x89dc0a66685c5405:0x5c961cc4feafc591!8m2!3d42.532302!4d-74.949333!16s%2Fg%2F11dzmk_pqr?entry=ttu">map</a>) </p>
         <p>To arrange a delivery, dm us on <a href="https://www.instagram.com/flowerhead.ny/">Instagram</a> or call or text us at 607-989-9999. You can also email us at <a href ="mailto: flowerhead.ny@gmail.com">flowerhead.ny@gmail.com </a>.</p>
         <p>We accept cash or card payments through Venmo, Square, or Cash App.</p>
+        <p class = "centered"><em> Changing the World One Flower a  Time<em></p>
+
     </div><!-- Your HTML content -->
 
     <script>
-        window.addEventListener('resize', function() {
-            var header = document.getElementById('headerText');
-            var image = document.querySelector('.image-section img');
-            var bodySection = document.querySelector('.body-section');
+      window.addEventListener('resize', function() {
+      var header = document.getElementById('headerText');
+      var image = document.querySelector('.image-section img');
+      var bodySection = document.querySelector('.body-section');
 
-            if (window.innerWidth < 1000) {
-                header.innerText = 'Flowerhead';
-                image.style.display = 'none';
-                bodySection.style.margin = '-180px auto 0';
-            } else {
-                header.innerText = 'Flowerhead Farm';
-                image.style.display = 'block';
-                bodySection.style.margin = '20px auto 0';
-            }
+      if (window.innerWidth < 1000) {
+          header.innerText = 'Flowerhead';
+          image.style.display = 'none';
+          bodySection.style.margin = '-180px auto 0';
+          bodySection.style.maxWidth = '90%'; // Use camelCase and = for assigning value
+      } else {
+          header.innerText = 'Flowerhead Farm';
+          image.style.display = 'block';
+          bodySection.style.margin = 'px auto 0';
+          bodySection.style.maxWidth = '70%'; // Use camelCase and = for assigning value
+      }
         });
     </script>
 </body>
